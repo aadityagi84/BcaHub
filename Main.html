@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgba(65, 105, 225, 0.678);
+      background: url('https://img.pikbest.com/backgrounds/20190716/gif-technology-light-effect-e-commerce-banner-background_2835465.jpg!sw800') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 1;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      height:30%;
+      width:50%;
+      border-radius:25px;
+    }
+    h1{
+      text-align:center;
+      color:white;
+    }
+    #confirmButton{
+  height: 40px;width:100px;
+  background-color: rgba(255, 0, 0, 0.801);
+  color:white;
+  border-radius:9px;
+  border:none;
+  margin:2% 45%;
+  transition: all 0.5s;
+    }
+    #confirmButton:hover{
+      background-color: white;
+      color:green;
+      border:2px solid green;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Confirmation Page</h1>
+  <img src="https://cdn.dribbble.com/users/1044993/screenshots/4647139/media/3aeb01af114ff757dee01edd95db7865.gif" alt="just fun "/>
+ 
+  <button id="confirmButton">Proceed</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const confirmButton = document.getElementById('confirmButton');
+
+  confirmButton.addEventListener('click', function() {
+   
+    const userConfirmed = window.confirm("Do you want to Access the WEb?");
+
+    if (userConfirmed) {
+     
+      alert("Welcome in My web'. Proceeding to the next page.");
+      window.location.href ="web Content/index.html" ; 
+    } else {
+   
+      alert("Plz try again'. ");
+   
+    
+    }
+  });
+});
+
+  </script>
+  
+</body>
+</html>

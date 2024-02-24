@@ -1,0 +1,175 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  
+}
+a:hover{
+  color:rgba(255, 0, 0, 0.719);
+  text-decoration: underline;
+  text-shadow: 0px 0px 1px red;
+}
+.main{
+  width:92%;
+  /* border:5px solid red; */
+ min-height:200vh;
+ display:flex;
+ flex-wrap: wrap;
+ margin:auto;
+}
+.cont1{
+  width:820px;
+ min-height:500px;
+  /* border:2px solid blue; */
+}
+.cont2{
+  width:400px;
+  height:100vh;
+  /* border-left:2px solid blue; */
+}
+
+.cont1>img{
+  width:96%;
+  height:50%;
+  opacity: 0.8;
+}
+.note{ 
+  min-height:80px;
+background-color: #dddddde5;
+/* padding:45px 47.5px; */
+padding:38.75px 73.625px ;
+
+}
+      
+.srch{
+  width:70%;
+  height:50px;
+  margin:2%;
+  padding:0% 2%;
+  border:none;
+  border:1px solid rgba(0, 0, 255, 0.678);
+  border-radius:8px;
+}
+.srch:hover{
+  box-shadow:0px 0px 6px blue;
+}
+#btn{
+  width:70px;
+  height:45px;
+  border-radius:8px;
+  border:none;
+  background-color: royalblue;
+  color:white;
+}
+#btn:hover{
+  background-color: whitesmoke;
+  color:green;
+  border:1px solid royalblue;
+}
+.note1{
+  width:100%;
+  min-height:120px;
+background-color: rgba(153, 205, 50, 0.452);
+padding:38.75px 73.625px ;
+margin:2% 1%;
+
+}
+.footer{
+  /* width:100%;
+  height:20vh;
+background-color: grey; */
+margin:30% 0 0 0;}
+#img1{
+  width:100%;
+  height:100%;
+}
+.banne{
+ height:60vh;
+}
+#contact{
+  width:100%;
+  height:80%;
+}
+.cnt{
+  height:80vh;
+}
+#imm{
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 35%;
+
+}
+
+@media  (max-width: 900px) {
+  .cont2 {
+    display: none;
+  }
+
+  .cont1 {
+    width: 100%;
+    height: 100%;
+  }
+  .fnt{
+    text-size:18px; 
+  }
+}
+/* 
+#todoList {
+  min-width: 400px;
+  margin: 20px auto;
+} */
+
+#taskInput {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius:10px;
+}
+#taskInput:hover{
+  box-shadow:0px 0px 8px blue;
+  border:none;
+
+}
+#fnt{
+ padding-left:30%;
+ text-wrap: wrap;
+}
+
+#addButton {
+  width: 18%;
+  padding: 8px;
+  background-color: rgba(255, 0, 0, 0.623);
+  color:white;
+  box-sizing: border-box;
+  border:none;
+
+  cursor: pointer;
+}
+#addButton:hover{
+  background-color: whitesmoke;
+  border:2px solid green;
+  border-radius:8px;
+  color:green;
+}
+
+#tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
